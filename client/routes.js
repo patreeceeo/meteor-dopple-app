@@ -6,12 +6,14 @@ Router.map(function() {
   this.route('splash_screen', {
     path: '/',
     template: 'splash_screen',
-    layoutTemplate: 'layout'
   });
   this.route('profile', {
     path: '/user/:user_id',
     template: 'profile',
-    layoutTemplate: 'layout'
+  });
+  this.route('friends', {
+    path: '/friends',
+    template: 'friends',
   });
   // this.route('multiple_yield_example', {
   //   path: '/survey/:survey_id/create_question',

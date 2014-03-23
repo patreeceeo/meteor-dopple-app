@@ -1,3 +1,13 @@
 <template name='profile'>
-  Profile
+<div><span><i class='fa fa-dollar'></i>{{currency_amount}}</span><span class="u-pullRight">35</span></div>
+  <div class='Grid'>
+    <div class='Grid-cell u-size1of1'>
+      <img src='/digimon_egg.jpg' class='DoppleImage'>
+    </div>
+    <div class='Grid-cell u-size1of2'>Level {{level_number}}</div><div class='Grid-cell u-size1of2'>
+      <div class='Meter'>
+        <div class='Meter-mercury' style="width: {{level_percent_complete}}%"></div>
+      </div>
+    </div>
+  </div> 
 </template>

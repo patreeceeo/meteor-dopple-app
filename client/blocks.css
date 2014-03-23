@@ -1,0 +1,40 @@
+.DoppleImage {
+  height: 60rem;
+  width: auto;
+}
+
+.ThumbnailPlaceholder {
+  height: 8rem;
+  width: 8rem;
+  position: relative;
+}
+
+.Nav div {
+  height: 8rem;
+}
+
+.Nav.Nav--bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.Meter {
+  height: 3rem;
+  width: 100%;
+  position: relative;
+  background: lightgray;
+}
+
+.Meter .Meter-mercury {
+  width: 30%;
+  height: 100%;
+  background: red;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.u-pullRight {
+  float: right;
+}

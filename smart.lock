@@ -2,13 +2,22 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "iron-router": {}
+      "iron-router": {},
+      "font-awesome": {
+        "git": "https://github.com/bline/meteor-font-awesome.git",
+        "branch": "master"
+      }
     },
     "packages": {
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.6.4",
         "commit": "927bbaed1b87894fb6fb70807f74ff3a5bd89f29"
+      },
+      "font-awesome": {
+        "git": "https://github.com/bline/meteor-font-awesome.git",
+        "branch": "master",
+        "commit": "b30734e6aca63244db84c3ede118e2aa1245aeed"
       }
     }
   }

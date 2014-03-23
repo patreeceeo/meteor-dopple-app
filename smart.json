@@ -1,5 +1,8 @@
 {
   "packages": {
-    "iron-router": {}
+    "iron-router": {},
+    "font-awesome": {
+      "git": "https://github.com/bline/meteor-font-awesome.git"
+    }    
   }
 }

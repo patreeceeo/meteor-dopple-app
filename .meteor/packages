@@ -9,3 +9,9 @@ insecure
 preserve-inputs
 
 iron-router
+font-awesome
+coffeescript
+
+bem-view
+skeletor-model
+http
