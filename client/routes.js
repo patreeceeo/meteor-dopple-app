@@ -28,6 +28,13 @@ Router.map(function() {
       park_route: true
     }
   });
+  this.route('settings', {
+    path: '/settings',
+    template: 'settings',
+    data: {
+      settings_route: true
+    }
+  });
   // this.route('multiple_yield_example', {
   //   path: '/survey/:survey_id/create_question',
   //   template: 'create_survey_question',

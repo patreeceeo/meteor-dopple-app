@@ -12,4 +12,4 @@ refreshData = Meteor.bindEnvironment ->
       level_percent_complete: (steps % steps_per_level) / (steps_per_level/100)
     ProfileCollection.update {_id: '1'}, profile
 
-setInterval refreshData, 60 * 1000
+# setInterval refreshData, 60 * 1000
