@@ -5,7 +5,7 @@ Router.configure({
 Router.map(function() {
   this.route('splash_screen', {
     path: '/',
-    template: 'splash_screen',
+    template: 'splash_screen'
   });
   this.route('profile', {
     path: '/user/:user_id',
