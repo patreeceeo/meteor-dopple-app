@@ -14,6 +14,8 @@ new class ProfileView extends View
       @model.get('currency_amount') < 500
     pet_is_happy: ->
       @model.get('currency_amount') >= 500
+    currency_amount: ->
+      @model.get 'currency_amount'
       # @model.get('mood') is 'happy'
   initialize: ->
     @model = new ProfileModel '1'
