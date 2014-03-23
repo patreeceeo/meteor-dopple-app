@@ -10,10 +10,23 @@ Router.map(function() {
   this.route('profile', {
     path: '/user/:user_id',
     template: 'profile',
+    data: {
+      profile_route: true
+    }
   });
-  this.route('friends', {
-    path: '/friends',
-    template: 'friends',
+  this.route('store', {
+    path: '/store',
+    template: 'store',
+    data: {
+      store_route: true
+    }
+  });
+  this.route('park', {
+    path: '/park',
+    template: 'park',
+    data: {
+      park_route: true
+    }
   });
   // this.route('multiple_yield_example', {
   //   path: '/survey/:survey_id/create_question',

@@ -5,10 +5,15 @@
 </head>
 
 <template name='layout'>
+  <div class='StatusBar'><span><i class='fa fa-dollar'></i>{{currency_amount}}</span><span class="u-pullRight">35</span></div>
   {{yield}}
   <div class='Nav Nav--bottom'>
     <div class='Grid'>
-      <div class='Grid-cell u-size1of4 u-colorRed'>1</div><div class='Grid-cell u-size1of4 u-colorGreen'>2</div><div class='Grid-cell u-size1of4 u-colorBlue'>3</div><div class='Grid-cell u-size1of4 u-colorRed'>4</div>
+      <div class='Grid-cell u-size1of4 Nav-item Nav-item-profile {{#if profile_route}}Nav-item-active{{/if}}'><a href="/user/1"></a>
+      </div><div class='Grid-cell u-size1of4 Nav-item Nav-item-park {{#if park_route}}Nav-item-active{{/if}}'><a href="/park"></a>
+      </div><div class='Grid-cell u-size1of4 Nav-item Nav-item-store {{#if store_route}}Nav-item-active{{/if}}'><a href="/store"></a>
+      </div><div class='Grid-cell u-size1of4 Nav-item Nav-item-settings {{#if settings_route}}Nav-item-active{{/if}}'><a href="/settings"></a>
+      </div>
     </div>
   </div>
 </template>

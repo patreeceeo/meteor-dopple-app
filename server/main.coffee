@@ -10,7 +10,6 @@ refreshData = Meteor.bindEnvironment ->
       currency_amount: steps
       level_number: Math.floor(steps/steps_per_level)
       level_percent_complete: (steps % steps_per_level) / (steps_per_level/100)
-    console.log 'steps', content.summary.steps
     ProfileCollection.update {_id: '1'}, profile
 
-setInterval refreshData, 30 * 1000
+setInterval refreshData, 60 * 1000

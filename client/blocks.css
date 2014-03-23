@@ -10,8 +10,47 @@
 }
 
 .Nav div {
-  height: 8rem;
+  height: 10rem;
 }
+
+.Nav-item {
+  background-image: url('/nav.png');
+  background-repeat: no-repeat;
+  background-size: 400% 200%;
+}
+
+.Nav-item a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.Nav-item-profile {
+  background-position: 0 0;
+}
+.Nav-item-park {
+  background-position: -245px 0;
+}
+.Nav-item-store {
+  background-position: -490px 0;
+}
+.Nav-item-settings {
+  background-position: -735px 0;
+}
+
+.Nav-item-profile.Nav-item-active {
+  background-position: 0 -160px;
+}
+.Nav-item-park.Nav-item-active{
+  background-position: -245px -160px;
+}
+.Nav-item-store.Nav-item-active{
+  background-position: -490px -160px;
+}
+.Nav-item-settings.Nav-item-active{
+  background-position: -735px -160px;
+}
+
 
 .Nav.Nav--bottom {
   width: 100%;
@@ -35,6 +74,58 @@
   overflow: hidden;
 }
 
+.StoreShelf {
+  /* position: relative; */
+  width: 160px;
+  height: 500px;
+}
+
+.Park, .Park-background {
+  height: 100%;
+}
+
+.StatusBar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+
+.Park-background {
+  height: 100%;
+  width: 100%;
+  background-image: url('/park_bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #83A34C;
+}
+
+.Park-pet {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.Park-pet-1 {
+  background-image: url('/park_pet_1.png')
+}
+.Park-pet-2 {
+  background-image: url('/park_pet_2.png')
+}
+.Park-pet-3 {
+  background-image: url('/park_pet_3.png')
+}
+.Park-pet-4 {
+  background-image: url('/park_pet_4.png')
+}
+
 .u-pullRight {
   float: right;
 }
+.u-pullLeft {
+  float: left;
+}
+
